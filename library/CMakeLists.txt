@@ -53,7 +53,8 @@ source_group( "Header Files\\Public" FILES ${hipblas_headers_public} )
 add_library( hipblas-common INTERFACE )
 
 target_include_directories( hipblas-common
-  INTERFACE  
+  INTERFACE
+          .
           $<BUILD_INTERFACE:${PROJECT_BINARY_DIR}/include>
           $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
 )
