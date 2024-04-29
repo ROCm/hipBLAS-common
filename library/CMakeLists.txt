@@ -54,7 +54,6 @@ add_library( hipblas-common INTERFACE )
 
 target_include_directories( hipblas-common
   INTERFACE
-          .
           $<BUILD_INTERFACE:${PROJECT_BINARY_DIR}/include>
           $<INSTALL_INTERFACE:${CMAKE_INSTALL_INCLUDEDIR}>
 )
@@ -64,3 +63,7 @@ rocm_install_targets(
   INCLUDE
     ${CMAKE_BINARY_DIR}/include
 )
+
+rocm_export_targets(TARGETS roc::hipblas-common
+                      DEPENDS PACKAGE hip
+                      NAMESPACE roc::)

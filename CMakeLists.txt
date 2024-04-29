@@ -101,4 +101,5 @@ rocm_create_package(
     MAINTAINER "hipBLAS Maintainer <hipblas-maintainer@amd.com>"
     LDCONFIG
     LDCONFIG_DIR ${HIPBLAS_CONFIG_DIR}
+    HEADER_ONLY
 )
