@@ -56,9 +56,6 @@ rocm_setup_version( VERSION ${VERSION_STRING} )
 
 option( BUILD_VERBOSE "Output additional build information" OFF )
 
-# Hip headers required of all clients; clients use hip to allocate device memory
-find_package( hip CONFIG PATHS ${HIP_DIR} ${ROCM_PATH} /opt/rocm )
-
 add_subdirectory( library )
 
 # Build docs
