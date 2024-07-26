@@ -65,5 +65,4 @@ rocm_install_targets(
 )
 
 rocm_export_targets(TARGETS roc::hipblas-common
-                      DEPENDS PACKAGE hip
                       NAMESPACE roc::)
