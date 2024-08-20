@@ -9,7 +9,7 @@ There are 2 ways to build the hipblas-common package:
 
 Simply run the rmake script:
 
-`./rmake --install`
+`python3 ./rmake.py --install`
 
 ### Calling cmake and make directly
 
