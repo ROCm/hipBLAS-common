@@ -84,6 +84,7 @@ typedef enum
     HIPBLAS_COMPUTE_64F_PEDANTIC = 8, /**< compute will be exactly 64-bit precision */
     HIPBLAS_COMPUTE_32I          = 9, /**< compute will be at least 32-bit integer precision */
     HIPBLAS_COMPUTE_32I_PEDANTIC = 10, /**< compute will be exactly 32-bit integer precision */
+    HIPBLAS_COMPUTE_32F_FAST_8F  = 100, /**< 32-bit compute using fp8 mfma instruction */
 } hipblasComputeType_t;
 
 #endif
