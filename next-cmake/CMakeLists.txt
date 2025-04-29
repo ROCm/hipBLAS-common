@@ -30,8 +30,6 @@ include(CMakePackageConfigHelpers)
 
 add_library(hipblas-common INTERFACE)
 add_library(hip::hipblas-common ALIAS hipblas-common)
-add_library(roc::hipblas-common ALIAS hipblas-common)
-message(DEPRECATION "roc::hipblas-common is deprecated. Use hip::hipblas-common")
 
 target_sources(hipblas-common 
     INTERFACE
@@ -54,18 +52,6 @@ write_basic_package_version_file(
 
 # Installing two target files one with hip:: namespace and one with
 # roc:: namespace which is on deprecation path
-install(
-    TARGETS hipblas-common
-    EXPORT roc-hipblas-common-targets
-    COMPONENT hipBLAS-common_Development
-)
-install(
-    EXPORT roc-hipblas-common-targets
-    DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/hipblas-common"
-    NAMESPACE roc::
-    COMPONENT hipBLAS-common_Development
-    FILE roc-hipblas-common-config-targets.cmake
-)
 install(
     TARGETS hipblas-common
     EXPORT hipblas-common-targets
