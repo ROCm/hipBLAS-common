@@ -11,19 +11,19 @@ Quick Start Guide
 
 |project_name| is a header-only library that provides common files for hipBLAS and hipBLASLt.
 
-This section describes how to configure and build the |project_name| project. We assume the user has a
-ROCm installation, Python 3.8 or newer and CMake 3.25.0 or newer.
+This section describes how to configure and build the |project_name| project. It assumes the user has a
+ROCm installation, Python 3.8 or later, and CMake 3.25.0 or later.
 
 ^^^^^^^^^^^^^^^^^^^
-Configure and Build
+Configure and build
 ^^^^^^^^^^^^^^^^^^^
 
-|project_name| provides modern CMake support and relies on native CMake functionality with exception of
-some project specific options. As such, users are advised to refer to the CMake documentation for
+|project_name| provides modern CMake support and relies on native CMake functionality, with the exception of
+some project specific options. As such, users are advised to consult the CMake documentation for
 general usage questions. Below are usage examples to get started. For details on all configuration
-options see the options section.
+options, see the options section.
 
-Build and Install |project_name|
+Build and install |project_name|
 --------------------------------
 
    .. code-block:: bash
@@ -45,7 +45,7 @@ Options
 
 |project_name| is a header-only library and does not have any custom build options.
 
-CMake Targets
+CMake targets
 -------------
 
 * ``hip::hipblas-common``
