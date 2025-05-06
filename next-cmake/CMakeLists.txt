@@ -29,7 +29,7 @@ include(GNUInstallDirs)
 include(CMakePackageConfigHelpers)
 
 add_library(hipblas-common INTERFACE)
-add_library(hip::hipblas-common ALIAS hipblas-common)
+add_library(roc::hipblas-common ALIAS hipblas-common)
 
 target_sources(hipblas-common 
     INTERFACE
@@ -60,7 +60,7 @@ install(
 install(
     EXPORT hipblas-common-targets
     DESTINATION "${CMAKE_INSTALL_LIBDIR}/cmake/hipblas-common"
-    NAMESPACE hip::
+    NAMESPACE roc::
     COMPONENT hipBLAS-common_Development
     FILE hipblas-common-config-targets.cmake
 )
