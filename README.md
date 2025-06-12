@@ -1,5 +1,7 @@
 # hipBLAS-common
 
+## The hipBLAS-common repository is retired, please use the [ROCm/rocm-libraries](https://github.com/ROCm/rocm-libraries) repository
+
 ## Quick Start Guide
 
 hipBLAS-common is a header-only library that provides common files for hipBLAS and hipBLASLt.
