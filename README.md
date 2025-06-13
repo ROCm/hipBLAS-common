@@ -1,6 +1,7 @@
 # hipBLAS-common
 
-## The hipBLAS-common repository is retired, please use the [ROCm/rocm-libraries](https://github.com/ROCm/rocm-libraries) repository
+> [!CAUTION]
+> The hipBLAS-common repository is retired, please use the [ROCm/rocm-libraries](https://github.com/ROCm/rocm-libraries) repository
 
 ## Quick Start Guide
 
